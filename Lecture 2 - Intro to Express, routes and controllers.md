@@ -1,3 +1,10 @@
+## NPM
+- Node Package Manager.
+- Nodejs has a lot of packages.
+- It helps you to install, uninstall, update
+- NPM creates a package.json. it contains info about packages (versions, list of all packages) used by your project.
+
+
 - To get started, we first need to initialize npm in the package, and install express.
 ```bash
 npm init
@@ -7,6 +14,7 @@ npm install express
 ```node
 const express = require("express")
 const app = express();
+app.use(express.json());    // to access body in request
 const port = 8080;
 const server = app.listen(port, ()=>{
 	console.log(`Server is listening on port ${port}`)
@@ -14,7 +22,6 @@ const server = app.listen(port, ()=>{
 ```
 - We need to setup routes so that we can test our server.
 ## Routes and routing
-Great! Let's expand on routes, routing, controllers, and the MVC architecture in Express.js.
 
 ### Routes and Routing in Express.js
 
