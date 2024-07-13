@@ -21,6 +21,11 @@ const server = app.listen(port, ()=>{
 })
 ```
 - We need to setup routes so that we can test our server.
+
+To run the server, enter below command in the terminal
+```bash
+node server.js
+```
 ## Routes and routing
 
 ### Routes and Routing in Express.js

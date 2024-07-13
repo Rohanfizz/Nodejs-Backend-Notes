@@ -26,9 +26,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b3497ae913ce4861",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 3 - Mongodb Intro.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -78,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "0a8c8b36c035d217",
@@ -95,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 2 - Intro to Express, routes and controllers.md",
+                "file": "Lecture 3 - Mongodb Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 2 - Intro to Express, routes and controllers.md",
+                "file": "Lecture 3 - Mongodb Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 2 - Intro to Express, routes and controllers.md"
+                "file": "Lecture 3 - Mongodb Intro.md"
               }
             }
           }
@@ -156,9 +167,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8c1923162660389",
+  "active": "b3497ae913ce4861",
   "lastOpenFiles": [
     "Lecture 2 - Intro to Express, routes and controllers.md",
+    "Lecture 3 - Mongodb Intro.md",
     "Welcome.md"
   ]
 }
