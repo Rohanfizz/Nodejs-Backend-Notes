@@ -8,39 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3fe3c92955e17d12",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "f8c1923162660389",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture 2 - Intro to Express, routes and controllers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b3497ae913ce4861",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture 3 - Mongodb Intro.md",
+                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 3 - Mongodb Intro.md",
+                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 3 - Mongodb Intro.md",
+                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 3 - Mongodb Intro.md"
+                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md"
               }
             }
           }
@@ -170,7 +149,7 @@
   "active": "b3497ae913ce4861",
   "lastOpenFiles": [
     "Lecture 2 - Intro to Express, routes and controllers.md",
-    "Lecture 3 - Mongodb Intro.md",
+    "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
     "Welcome.md"
   ]
 }
