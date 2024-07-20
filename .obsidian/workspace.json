@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4cea3b14c4087c6c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 5 Error Handling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b069c1c3d181a05b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 5 Error Handling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
+                "file": "Lecture 5 Error Handling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
+                "file": "Lecture 5 Error Handling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md"
+                "file": "Lecture 5 Error Handling.md"
               }
             }
           }
@@ -146,10 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b3497ae913ce4861",
+  "active": "b069c1c3d181a05b",
   "lastOpenFiles": [
-    "Lecture 2 - Intro to Express, routes and controllers.md",
+    "Lecture 6 Error Handling.md",
+    "Lecture 5 Error Handling.md",
+    "Rohan's submission to fomofactory.md",
     "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
+    "Lecture 2 - Intro to Express, routes and controllers.md",
     "Welcome.md"
   ]
 }
