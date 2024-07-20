@@ -8,8 +8,49 @@
 	- [ ] Show Global -> process variable
 	- [ ] Set breakpoint on getAllPosts
 		- [ ] show variables
-- [ ] **What is a middleware**
-- [ ] `next()` show the example 
+## **What is a middleware**
+Problem statement: Any user can delete any user's account in DB by calling `DELETE /user/:id`
+We want some authentication to happen before we go ahead and delete user data.
+
+- [ ] `next()` passes control to the next middleware function. Note: next() is having no parameters
+```js
+exports.deleteUserById = async function (req, res) {
+    const { id } = req.params;
+    try {
+        await UserModel.findByIdAndDelete(id);
+    } catch (err) {
+        res.status(500).json({
+            status: "fail",
+            message: err.message,
+        });
+        return;
+    }
+    res.status(200).json({
+        status: "success",
+        data: `User with id: ${id} deleted successfully`,
+    });
+};
+  
+exports.authorizeUser = async function (req, res, next) {
+    const passwordInHeaders = req.headers.password;
+    const { id } = req.params;
+  
+    // I will search the user in DB
+    const user = await UserModel.findById(id);
+    // Compare the DB password with the one provided in headers
+    if (user.password === passwordInHeaders) {
+        // if matched, go to next middleware
+        next();
+    } else {
+        // else return 401 Unauthorized
+        res.status(401).json({
+            status: "fail",
+            message: `You are not authorized to perform this operation`,
+        });
+        return;
+    }
+};
+```
 - [ ] Handling undefined routes
 	- [ ] After all the routers add this
 ```js
@@ -20,7 +61,7 @@ app.all('*',(req,res,next){
 		})
 })
 ```
-- [ ] Global error handling middleware need
+- Global error handling middleware need
 	- [ ] no matter if it's an error coming from a route handler, or a model validator or really, someplace else, the goal is that all these errors end up in one central error handling middleware. So that we can send a nice response back to the client letting them know what happened.
 	-  Give **4 arguments** to middleware and express will recognize it as an error-handling middleware, and thfr only call it when there is an error
     - To access the status code of the error, we will have to define it on the err.statusCode.
@@ -48,13 +89,13 @@ app.use((err,req,res,next)=>{
 
 - [ ] Two types of errors, Operational and programming
 
-| Operational | Programming |
-| ---- | ---- |
+| Operational = fail                                                 | Programming = error                                                |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------ |
 | **Problems which we know would <br>happen and we plan in advance** | **Bugs that we devs introduce in our code<br>Difficult to handle** |
-| Invalid path accessed | Reading properties of undefined |
-| Invalid user input | Passing number where string is expected |
-| Failed to connect to server | Not using `async` on sync code |
-| Request timeout etc. | et
+| Invalid path accessed                                              | Reading properties of undefined                                    |
+| Invalid user input                                                 | Passing number where string is expected                            |
+| Failed to connect to server                                        | Not using `async` on sync code                                     |
+| Request timeout etc.                                               | etc.                                                               |
 - [ ] Create class which handles all the Operational Erros
 ```js
 class AppError extends Error {
