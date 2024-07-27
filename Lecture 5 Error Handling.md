@@ -119,24 +119,31 @@ next(new AppError(`Cant find ${req.originalUrl} on this server!`, 404));
 ```js
 To catch errors in async functions, just wrap the function inside another function which returns a function as a value, and catching the error is handled by it.
 
-const catchAsync = (fn) => {
-  return (req, res, next) => {
-    fn(req, res, next).catch(next);
-  };
+exports.CatchAsync = (fn) => {
+    return async (req, res, next) => {
+        try {
+            await fn(req, res, next);
+        } catch (err) {
+           next(err);  // This will always handle programatic errors / Internal server error
+            return;
+        }
+    };
 };
 
-exports.addTour = catchAsync(async (req, res) => {
-  const newTour = await Tour.create(req.body);
-
-  res.status(201).json({
-    status: 'success',
-    data: {
-      tour: newTour,
-    },
-  });
+// Usage
+exports.getUserbyId = CatchAsync(async function (req, res, next) {
+    const { id } = req.params;
+    let user;
+    user = await UserModel.findById(id);
+    if (!user) {
+        next(new AppError(`User Id ${id} not found!`, 404));    // These cases will handle operation errors /  404, 4XX
+        return;
+    }
+    res.status(200).json({
+        status: "success",
+        data: user,
+    });
 });
-
-In actual code, catchAsync function has been transferred to utils/catchAsync.js
 ```
 
 - Handling 404 errors

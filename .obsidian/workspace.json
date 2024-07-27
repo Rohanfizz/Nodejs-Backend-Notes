@@ -42,9 +42,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b63daa87e270bdf2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 6 Error Handling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f2815937640f465",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 7 User Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0dd1d5824b178dc2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 7 User Authentication.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -110,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 5 Error Handling.md",
+                "file": "Lecture 7 User Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 5 Error Handling.md",
+                "file": "Lecture 7 User Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 5 Error Handling.md"
+                "file": "Lecture 7 User Authentication.md"
               }
             }
           }
@@ -171,12 +207,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b069c1c3d181a05b",
+  "active": "0dd1d5824b178dc2",
   "lastOpenFiles": [
+    "Lecture 8 User Authorization.md",
+    "diagram.png",
+    "Pasted image 20240217183610.png",
+    "Lecture 7 User Authentication.md",
+    "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
     "Lecture 6 Error Handling.md",
     "Lecture 5 Error Handling.md",
     "Rohan's submission to fomofactory.md",
-    "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
     "Lecture 2 - Intro to Express, routes and controllers.md",
     "Welcome.md"
   ]

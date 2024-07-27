@@ -23,23 +23,20 @@ const serErrDev = (err, res) => {
     });
 };
 ```
-- For Producti
+- For Production
 ```js
-const sendErrorProd = (err, res) => {
-    if (err.isOperational) {
-        // Operational error, trusted, error: send message to client
+exports.sendErrProd = (err, res) => {
+    console.log(err)
+    if (err.statusCode == 500) { // Programatic error = we want to hid information
         res.status(err.statusCode).json({
             status: err.status,
-            message: err.message,
+            message: "Oh something bad happened!",
         });
-        //Programming or unknown error: don't leak error details
-    } else {
-        //1) Log the error
-        console.error("ERROR 💥", err);
-        //2)Send generic message
-        res.status(500).json({
-            status: "error",
-            message: "Something went very wrong!",
+        return;
+    } else {    // Operation Error => we want to show the user what bad happened
+        res.status(err.statusCode).json({
+	            status: err.status,
+            message: err.message,
         });
     }
 };
