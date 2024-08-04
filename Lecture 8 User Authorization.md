@@ -17,7 +17,7 @@ The body of an HTTP request is used to send data to the server. This part of the
 - **Uploading a file**: Files are transmitted to the server in the request body.
 - **API requests**: When interacting with APIs, the request body often contains data in JSON or XML format that you're sending to the server.
 
-### 3. Cookies
+### Cookies
 
 Cookies are small pieces of data stored on the client side and are sent to the server with HTTP requests through the `Cookie` header. They are used for:
 
@@ -111,7 +111,25 @@ Now call this function in the last step of protect function
         );
     }
 ```
+For testing you can implement this dummy changePassword controller which just updates the passwordChangedAt timestamp
+```js
+exports.updatePasswordController = CatchAsync(async funcion (req, res, next) {
 
+    const currentUser = await UserModel.findOneAndUpdate(
+        { email: req.body.email },
+        {
+            passwordChangedAt: Date.now(),
+        },
+        {
+            new: true,
+        }
+    );
+    res.status(200).json({
+        status: "success",
+        user: currentUser,
+    });
+});
+```
 ### Advance Postman Setup
 - Environment variables
 - Test Scripts - `pm.environment.set("jwt", pm.response.json().token);` - Used to set jwt token automatically

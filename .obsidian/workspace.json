@@ -73,14 +73,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture 7 User Authentication.md",
+                "file": "Lecture 8 User Authorization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a93613faa9508c88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 9 Advanced Mongoose.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 7 User Authentication.md",
+                "file": "Lecture 9 Advanced Mongoose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 7 User Authentication.md",
+                "file": "Lecture 9 Advanced Mongoose.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 7 User Authentication.md"
+                "file": "Lecture 9 Advanced Mongoose.md"
               }
             }
           }
@@ -207,17 +219,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0dd1d5824b178dc2",
+  "active": "a93613faa9508c88",
   "lastOpenFiles": [
     "Lecture 8 User Authorization.md",
-    "diagram.png",
-    "Pasted image 20240217183610.png",
+    "Lecture 9 Advanced Mongoose.md",
     "Lecture 7 User Authentication.md",
     "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
-    "Lecture 6 Error Handling.md",
     "Lecture 5 Error Handling.md",
-    "Rohan's submission to fomofactory.md",
     "Lecture 2 - Intro to Express, routes and controllers.md",
+    "Lecture 6 Error Handling.md",
+    "password.drawio.png",
+    "diagram.png",
+    "Pasted image 20240217183610.png",
+    "Rohan's submission to fomofactory.md",
     "Welcome.md"
   ]
 }

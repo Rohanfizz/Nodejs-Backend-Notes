@@ -62,6 +62,7 @@ exports.signup = catchAsync(async (req, res, next) => {
 
 ```
 - [ ] Encrypting passwords
+![[password.drawio.png]]
 	- [ ] pre middleware by mongoose
 	- [ ] bcrypt
 ```js
@@ -90,7 +91,9 @@ userSchema.pre('save', async function (next) {
 Header and payload are encoded and not encrypted which means anyone can decode them. but verification signature cannot be altered as it is made up of header,payload and signature.
 
 
-to verify a JWT is valid and has not been altered, JWT takes in header and payload and creates a test signature with the original signature. If the test signature and the original signature (original signature is stored on server) match, access granted, else no.
+## Establishing Identity With jWT
+
+to verify if a JWT is valid and has not been altered, JWT takes in header and payload and creates a test signature with the original signature. If the test signature and the original signature (original signature is stored on server) match, access granted, else no.
 ![[Pasted image 20240217183610.png]]
 JWT Signature verification
 ![[diagram.png]]
