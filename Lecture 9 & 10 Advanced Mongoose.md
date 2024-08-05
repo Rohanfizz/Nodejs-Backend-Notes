@@ -2,8 +2,8 @@
 - query through url `/posts?likes=5&active=true` and access using `req.query`
 - Querying in find function
 ```js
-const post = await BlogPostModel.find({
-	likes : 5,
+const post = await ProductModel.find({
+	gender : "men",
 	active: true
 })
 ```
@@ -14,7 +14,7 @@ const posts = await BlogPostModel.find().where('likes').equals(5).where('active'
 
 ### Advance features like sort, pagination, limit and fields
 - For advance features, we will need to work with `Query()` object which is returned if we don't `await` the find method. 
-	- For example, `const blogPosts = await BlogPostModel.find()` if we `await` the query will be executed and all the results will be returned of the query. But if we don't await, a `Query()` object will be returned.
+	- For example, `const products = await ProductModel.find()` if we `await` ,the query will be executed and all the results will be returned of the query. But if we don't await, a `Query()` object will be returned.
 	- [Query object docs](https://mongoosejs.com/docs/api/query.html#Query())
 - Therefore to apply advance features like pagination, sorting etc. we can't await the find() method from the get go as we need to play with the `Query()` object.
 ```js
@@ -34,10 +34,10 @@ const blogPosts = await query;
 ```js
 {active: true, likes: { $gte : 12 }}
 ```
-if you use query like this = `/blogPost/likes[gte]=5&active=true`
+if you use query like this = `/products/price[gte]=50&active=true`
 output of req.query will look like this-
 ```js
-{active: true, likes: { gte : 12 }}
+{active: true, price: { gte : 50 }}
 ```
 Notice that its only missing "$" sign in front of `gte`
 We will use Regex expression to replace gte,gt,lte,lt with `$gte, $gt,$lte,$lt`
@@ -48,7 +48,7 @@ query = Blogpost.find(JSON.parse(queryStr))
 ```
 
 ### Sorting
-for sorting, our query url will look like this `/blogPost/sort=likes` and for descending, `/blogpost/sort=-likes`
+for sorting, our query url will look like this `/product?sort=price` and for descending, `/product?sort=-price`
 - On the query object, we will simply do this
 ```js
 let query = Blogpost.find(JSON.parse(queryStr)) // from above code

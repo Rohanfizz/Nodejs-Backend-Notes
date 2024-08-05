@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture 9 Advanced Mongoose.md",
+                "file": "Lecture 9 & 10 Advanced Mongoose.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 282.500732421875
   },
   "right": {
     "id": "0a8c8b36c035d217",
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 9 Advanced Mongoose.md",
+                "file": "Lecture 9 & 10 Advanced Mongoose.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 9 Advanced Mongoose.md",
+                "file": "Lecture 9 & 10 Advanced Mongoose.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 9 Advanced Mongoose.md"
+                "file": "Lecture 9 & 10 Advanced Mongoose.md"
               }
             }
           }
@@ -221,8 +221,9 @@
   },
   "active": "a93613faa9508c88",
   "lastOpenFiles": [
+    "Postman_Collection",
     "Lecture 8 User Authorization.md",
-    "Lecture 9 Advanced Mongoose.md",
+    "Lecture 9 & 10 Advanced Mongoose.md",
     "Lecture 7 User Authentication.md",
     "Lecture 3 & 4 - Mongodb Intro and CRUD using MongoDB.md",
     "Lecture 5 Error Handling.md",
